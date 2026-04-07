@@ -123,10 +123,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Asteroide.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Navicella.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Asteroide.h" />
     <ClInclude Include="Navicella.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
