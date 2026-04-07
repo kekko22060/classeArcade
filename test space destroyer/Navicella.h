@@ -14,7 +14,7 @@ public:
 	Navicella();
 	Navicella(int startX, int startY);
 	void muovi(char input, int maxX, int maxY);
-	int getX();
-	int getY();
+	int getCoordinataX();
+	int getCoordinataY();
 	char getCarattere();
 };

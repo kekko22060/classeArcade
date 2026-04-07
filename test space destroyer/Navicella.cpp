@@ -1,7 +1,8 @@
 #include "Navicella.h"
+
 Navicella::Navicella() {
-	this->x;
-	this->y;
+	this->x=0;
+	this->y=0;
 	this->carattere;
 }
 Navicella::Navicella(int startX, int startY)  {
@@ -21,12 +22,17 @@ void Navicella::muovi(char input, int maxX, int maxY) {
 		this->x++;
 }
 
-int Navicella::getX(){ 
-	return x; 
+int Navicella::getCoordinataX()
+{
+	return this->x;
 }
-int Navicella::getY(){ 
-	return y; 
+
+int Navicella::getCoordinataY()
+{
+	return this->y;
 }
+
 char Navicella::getCarattere() {
 	return carattere; 
 }
+

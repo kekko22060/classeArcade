@@ -1,18 +1,30 @@
 #pragma once
-#include <cstdlib>
 #include <string>
 using namespace std;
-class Asteroide
-{
+class Asteroide {
 private:
-	int x, y,velocita;
+    float x, y;
+    float velocita;
+    int larghezza, altezza;
+    bool attivo;
+
 public:
-	Asteroide();
-	Asteroide(int altezzaSchermo);
+    
+    Asteroide(int larghezzaSchermo, int altezzaSchermo);
+    void reset(int larghezzaSchermo, int altezzaSchermo);
 
-	void distruggiAsteroide();
-	void spostaAsteroide();
-	string toString();
+    void aggiorna(); 
+    bool fuoriSchermo(); 
+    bool collisione(float px, float py); 
+   
+    void distruggi(); 
+ 
+    float getX();
+    float getY();
+    int getWidth();
+    int getHeight();
 
+    bool isAttivo(); 
+
+    string toString();
 };
-
