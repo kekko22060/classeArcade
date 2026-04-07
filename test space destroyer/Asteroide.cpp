@@ -14,6 +14,12 @@ Asteroide::Asteroide(int altezzaSchermo)
 	this->velocita += 1;
 }
 
+void Asteroide::distruggiAsteroide()
+{
+	this->x = 0;
+	this->y = 0;
+}
+
 void Asteroide::spostaAsteroide()
 {
 	this->x += velocita;

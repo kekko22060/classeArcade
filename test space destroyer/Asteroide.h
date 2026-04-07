@@ -10,6 +10,7 @@ public:
 	Asteroide();
 	Asteroide(int altezzaSchermo);
 
+	void distruggiAsteroide();
 	void spostaAsteroide();
 	string toString();
 
